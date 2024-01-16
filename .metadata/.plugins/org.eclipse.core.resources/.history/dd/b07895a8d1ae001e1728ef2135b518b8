@@ -1,0 +1,16 @@
+package es.studium.colecciones;
+
+import java.util.ArrayList;
+import java.util.List;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Principal {
+	public static void main(String[] args) {
+		/*Abrimos el contenedor de IoC indicando la ruta exacta del
+fichero beans2.xml donde
+		 * tenemos la inyección de dependencias vía constructor*/
+		ApplicationContext appContext = new
+				ClassPathXmlApplicationContext("es/studium/xml/beans.xml");
+	}
+}

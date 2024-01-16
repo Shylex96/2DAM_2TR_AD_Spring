@@ -1,0 +1,11 @@
+INDEX VERSION 1.134+C:\Users\Studium\Desktop\Spring\STS-WORKSPACE\.metadata\.plugins\org.eclipse.jdt.core
+2054693544.index
+2418808109.index
+73122200.index
+1523588761.index
+1917908996.index
+964811659.index
+2251084793.index
+1865797976.index
+1255313199.index
+1375001844.index

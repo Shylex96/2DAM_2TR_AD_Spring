@@ -1,0 +1,23 @@
+package es.studium.anotaciones;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Principal {
+	public static void main(String[] args) {
+		/*Abrimos el contenedor de IoC indicando la ruta exacta
+		 * del fichero beans.xml */
+		ApplicationContext appContext = new
+				ClassPathXmlApplicationContext("es/studium/xml/beans.xml");
+		/* Obtenemos dos beans de tipo Poblacion con los id que hemos
+indicado en el fichero beans.xml */
+		Poblacion p1 = appContext.getBean("SevillaCapital",
+				Poblacion.class);
+		Poblacion p2 = appContext.getBean("MairenaAljarafe",
+				Poblacion.class);
+		System.out.println(p1);
+		System.out.println(p2);
+		((ConfigurableApplicationContext) appContext).close();
+	}
+}

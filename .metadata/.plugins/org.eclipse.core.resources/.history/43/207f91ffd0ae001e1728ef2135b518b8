@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <bean id="Sevilla" class="es.studium.colecciones.Provincia">
+ <property name="nombre" value="Sevilla"></property>
+ <property name="poblaciones">
+<list>
+ <ref bean="SevillaCapital" />
+ <bean class="es.studium.colecciones.Poblacion">
+ <property name="nombre" value="Ecija"></property>
+ <property name="cantidadHabitantes" value="40634"></property>
+ </bean>
+ <bean class="es.studium.colecciones.Poblacion">
+ <property name="nombre" value="Mairena del Aljarafe"></property>
+ <property name="cantidadHabitantes" value="40700"></property>
+ </bean>
+ <ref bean="DosHermanas"></ref>
+ </list>
+ </property>
+ </bean>
+</beans>

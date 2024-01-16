@@ -1,0 +1,21 @@
+package es.studium.anotaciones;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Principal {
+	
+	public static void main(String[] args) {
+
+		/*Abrimos el contenedor de IoC indicando
+		 * la ruta exacta del fichero beans.xml*/
+
+		ApplicationContext appContext = new
+				ClassPathXmlApplicationContext("es/studium/xml/beans.xml");
+		/* Obtenemos un bean de tipo Mundo*/
+		Mundo m = appContext.getBean("mundo", Mundo.class);
+		System.out.println(m.getSaludo());
+		((ConfigurableApplicationContext) appContext).close();
+	}
+}

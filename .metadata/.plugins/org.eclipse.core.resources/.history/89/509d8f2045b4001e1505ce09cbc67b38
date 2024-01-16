@@ -1,0 +1,14 @@
+package es.studium.anotaciones;
+import org.springframework.context.ApplicationContext;
+import
+org.springframework.context.annotation.AnnotationConfigApplicationContext;
+public class Principal {
+	public static void main(String[] args) {
+		ApplicationContext appContext = new
+				AnnotationConfigApplicationContext(AppConfig.class);
+		Saludar saludar = appContext.getBean(Saludar.class);
+		System.out.println(saludar.saludo());
+		((AnnotationConfigApplicationContext) appContext).close();
+	}
+}
+}

@@ -1,0 +1,5 @@
+package es.studium.autowiring;
+
+public class Persona {
+
+}
