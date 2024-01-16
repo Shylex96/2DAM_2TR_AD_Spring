@@ -1,4 +1,6 @@
 GitRepositoriesView.GitDirectories=C\:\\Users\\Studium\\Desktop\\Spring\\STS-WORKSPACE\\.git;
 GitRepositoriesView.GitDirectories.relative=.git;
 core_autoIgnoreDerivedResources=false
+core_autoShareProjects=false
+core_ssh_default_agent=\\\\.\\pageant
 eclipse.preferences.version=1
